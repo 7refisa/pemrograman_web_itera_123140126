@@ -140,10 +140,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Event listener untuk tombol Update Tugas (jika di klik terpisah)
   updateTaskBtn.addEventListener("click", (e) => {
-    // Ini akan memicu submit form jika tombol ini ada di dalam form
-    // Tetapi kita sudah handle di event listener taskForm 'submit',
-    // jadi ini mungkin tidak diperlukan jika tombol submit utama diubah textnya
-    // atau jika tombol ini di luar form. Untuk sekarang, kita biarkan saja event submit form yang menangani.
   });
 
   // Event listener untuk tombol Batal Edit
