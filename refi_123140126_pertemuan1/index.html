@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manajemen Tugas Mahasiswa</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <h1>Manajemen Tugas 📑</h1>
+        <p>Refi Ikhsanti (NIM 123140126) PAW RA</p>
+      </header>
+
+      <main>
+        <section class="input-section">
+          <h2>Tambah/Edit Tugas</h2>
+          <form id="task-form">
+            <div class="form-group">
+              <input
+                type="text"
+                id="task-name"
+                placeholder="Nama Tugas (Contoh: Laporan Praktikum)"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                id="task-subject"
+                placeholder="Mata Kuliah (Contoh: Pemrograman Web)"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="task-deadline">Deadline Tugas:</label>
+              <input type="date" id="task-deadline" required />
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="add-task-btn">
+              Tambah Tugas
+            </button>
+
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="update-task-btn"
+              style="display: none"
+            >
+              Update Tugas
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-danger"
+              id="cancel-edit-btn"
+              style="display: none"
+            >
+              Batal Edit
+            </button>
+          </form>
+        </section>
+
+        <section class="task-list-section">
+          <div class="filter-header">
+            <h2>
+              Daftar Tugas (<span id="incomplete-count">0</span> belum selesai)
+            </h2>
+            <div class="filter-group">
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Cari berdasarkan Matkul"
+              />
+              <select id="status-filter">
+                <option value="all">Semua Status</option>
+                <option value="incomplete">Belum Selesai</option>
+                <option value="completed">Selesai</option>
+              </select>
+            </div>
+          </div>
+          <div id="task-list-container"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
