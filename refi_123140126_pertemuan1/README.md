@@ -28,12 +28,15 @@ Aplikasi ini sepenuhnya berjalan di sisi klien (*client-side*) dan menggunakan `
 Berikut adalah beberapa screenshot dari aplikasi yang sedang berjalan:
 
 **1. Tampilan Utama dengan Daftar Tugas**
-<img width="947" height="437" alt="image" src="https://github.com/user-attachments/assets/491aa8aa-0eb2-4428-b7f3-2301998412ed" />
+
+<img width="945" height="434" alt="image" src="https://github.com/user-attachments/assets/b33215c5-73b3-45d4-a878-c6319c6f4ecb" />
 
 **2. Tampilan Form dalam Mode Edit Tugas**
+
 <img width="504" height="355" alt="image" src="https://github.com/user-attachments/assets/cd8f9e2a-4f5f-4f55-902d-e93ade37f82a" />
 
 **3. Tampilan Fitur Filter dan Pencarian Aktif**
+
 <img width="494" height="184" alt="image" src="https://github.com/user-attachments/assets/dbe8245c-40e7-47f8-bf77-0297861dd4e2" />
 <img width="497" height="189" alt="image" src="https://github.com/user-attachments/assets/eff604f8-b207-4297-a4ad-1531ca676784" />
 
