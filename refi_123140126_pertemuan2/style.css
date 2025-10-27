@@ -1,0 +1,227 @@
+/* Reset dasar dan font */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+main {
+  padding: 1.5rem;
+  max-width: 1600px; /* Diperlebar untuk 5 kolom */
+  margin: 0 auto;
+}
+
+/* Kontainer Formulir */
+.form-container {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.form-container h2 {
+  margin-bottom: 1rem;
+}
+
+#schedule-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* [BARU] Aturan untuk membuat item form mengambil 2 kolom */
+.form-group-span-2 {
+  grid-column: span 2;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: #555;
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form-buttons {
+  grid-column: 1 / -1; /* Tombol mengambil lebar penuh */
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"] {
+  background-color: #007aff;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#cancel-edit-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+#cancel-edit-btn:hover {
+  background-color: #5a6268;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Papan Jadwal */
+.board-container {
+  display: grid;
+  /* Diubah menjadi 5 kolom */
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+}
+
+.day-column {
+  background-color: #f4f5f7;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.column-header {
+  padding: 0.75rem 1rem;
+}
+
+.column-header h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.cards-container {
+  padding: 0 1rem 1rem 1rem;
+  min-height: 200px;
+}
+
+/* Kartu Jadwal */
+.class-card {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+}
+
+.class-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.class-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.15rem;
+}
+
+.card-time {
+  font-weight: 500;
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 0.75rem;
+}
+
+.card-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.btn-edit {
+  color: #007aff;
+}
+.btn-edit:hover {
+  background-color: #e0f2fe;
+}
+
+.btn-delete {
+  color: #ff3b30;
+}
+.btn-delete:hover {
+  background-color: #fde9e9;
+}
+
+/* Responsif */
+/* Menyesuaikan breakpoint untuk 5 kolom */
+@media (max-width: 1200px) {
+  .board-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .board-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  #schedule-form {
+    grid-template-columns: 1fr; /* Stack form inputs */
+  }
+  .board-container {
+    grid-template-columns: 1fr; /* Stack columns */
+  }
+
+  /* [BARU] Di layar kecil, kita reset agar span tidak berlaku */
+  .form-group-span-2 {
+    grid-column: span 1;
+  }
+}
