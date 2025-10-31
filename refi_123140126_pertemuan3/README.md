@@ -48,14 +48,13 @@ Untuk menjalankan proyek ini di komputer lokal Anda, ikuti langkah-langkah berik
 ## 3. Screenshot Antarmuka
 Berikut adalah beberapa tampilan antarmuka aplikasi:
 **Halaman Utama (Daftar Buku dan Filter)**
-![Halaman Utama](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/909cba12-e388-493a-a6ad-55546e2e082a" />)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b88ed850-fada-4d48-875a-682efc7e8400" />
 
 **Modal Form (Tambah Buku)**
-![Modal Form](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8bd090c6-c3f4-4e11-a266-9c577b52dffc" />)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0d7cb7ef-df26-4061-a00c-17d3138f4625" />
 
 **Halaman Statistik**
-![Halaman Statistik](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f5941ccf-d058-4160-8ddc-a0e2e88154ea" />)
-
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9b64a085-2b7d-488b-894a-0cb37ce1cb74" />
 
 ## 4. Penjelasan Fitur React yang Digunakan
 Proyek ini mengimplementasikan berbagai konsep inti dan modern React:
