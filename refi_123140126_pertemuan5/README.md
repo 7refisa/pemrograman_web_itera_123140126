@@ -258,7 +258,7 @@ refi_123140126_pertemuan5/
 ## Panduan Penggunaan
 ### Menu Utama
 Setelah menjalankan program, akan terlihat menu dengan 12 pilihan:
-![Menu Utama](image.png)
+<img width="947" height="495" alt="image" src="https://github.com/user-attachments/assets/3f6ff82f-7fcd-4177-a300-6e343e17612c" />
 
 ### Contoh Penggunaan:
 #### 1. Menambah Item Baru
@@ -284,23 +284,23 @@ Setelah menjalankan program, akan terlihat menu dengan 12 pilihan:
 
 ## Screenshot Hasil Running Program
 ### 1. Menu Utama
-![Menu Utama](image-5.png)
+<img width="947" height="495" alt="image" src="https://github.com/user-attachments/assets/98019e9d-1001-4d41-b3c4-47c976593a10" />
 _Tampilan menu utama sistem perpustakaan_
 
 ### 2. Tampilan Semua Item
-![Semua Item](image-1.png)
+<img width="1087" height="457" alt="image" src="https://github.com/user-attachments/assets/9fc1b009-35e7-4613-91a3-9423f8f5cf78" />
 _Daftar lengkap koleksi perpustakaan dengan polymorphism_
 
 ### 3. Statistik Perpustakaan
-![Statistik](image-2.png)
+<img width="940" height="364" alt="image" src="https://github.com/user-attachments/assets/77c85305-77a3-415f-a075-8bef04dad774" />
 _Statistik lengkap perpustakaan_
 
 ### 4. Pencarian Item
-![Pencarian](image-3.png)
+<img width="1029" height="276" alt="image" src="https://github.com/user-attachments/assets/4c4fafde-2722-4210-8610-a4007ba055a2" />
 _Hasil pencarian berdasarkan judul_
 
 ### 5. Peminjaman Item
-![Peminjaman](image-4.png)
+<img width="1068" height="616" alt="image" src="https://github.com/user-attachments/assets/9707e950-c36b-4469-940c-068fabee90e1" />
 _Proses peminjaman item_
 
 ## Fitur Teknis
