@@ -1,0 +1,201 @@
+:root {
+  --primary-color: #4a90e2;
+  --background-color: #f4f7f6;
+  --card-color: #ffffff;
+  --text-color: #333;
+  --gray-color: #888;
+  --success-color: #5cb85c;
+  --danger-color: #d9534f;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: var(--card-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 30px;
+}
+
+header {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: var(--primary-color);
+  margin: 0;
+}
+
+h2 {
+  color: var(--text-color);
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  color: var(--gray-color);
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #357abd;
+}
+
+#task-form .btn {
+  margin-top: 10px;
+  margin-right: 10px;
+  width: auto;
+}
+
+.task-list-section {
+  margin-top: 40px;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.filter-group {
+  display: flex;
+  gap: 10px;
+}
+
+#search-input {
+  width: fit-content;
+}
+
+.task-item {
+  background-color: #fdfdfd;
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.2s ease;
+}
+
+.task-item:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.task-item.completed .task-details p {
+  text-decoration: line-through;
+  color: var(--gray-color);
+}
+
+.task-details p {
+  margin: 0;
+}
+
+.task-details .task-name {
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.task-details .task-subject {
+  font-size: 0.9em;
+  color: var(--primary-color);
+}
+
+.task-details .task-deadline {
+  font-size: 0.8em;
+  color: var(--gray-color);
+  margin-top: 5px;
+}
+
+.task-actions button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  font-size: 0.9em;
+}
+
+.btn-complete {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.btn-complete:hover {
+  background-color: #4cae4c;
+}
+
+.btn-edit {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #ec971f;
+}
+
+.btn-delete {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c9302c;
+}
+
+#cancel-edit-btn {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+#cancel-edit-btn:hover {
+  background-color: #c9302c;
+}

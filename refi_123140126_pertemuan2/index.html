@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Dashboard - Jadwal Kuliah</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Personal Dashboard</h1>
+    </header>
+
+    <main>
+      <div class="form-container">
+        <h2>Tambah / Edit Jadwal</h2>
+        <form id="schedule-form">
+          <input type="hidden" id="edit-id" />
+
+          <div class="form-group">
+            <label for="day">Hari</label>
+            <select id="day" name="day" required>
+              <option value="senin">Senin</option>
+              <option value="selasa">Selasa</option>
+              <option value="rabu">Rabu</option>
+              <option value="kamis">Kamis</option>
+              <option value="jumat">Jumat</option>
+            </select>
+          </div>
+
+          <div class="form-group form-group-span-2">
+            <label for="courseName">Mata Kuliah (ex: Web RA (MHA))</label>
+            <input type="text" id="courseName" name="courseName" required />
+          </div>
+
+          <div class="form-group">
+            <label for="location">Lokasi (ex: Labtek 3, IoT)</label>
+            <input type="text" id="location" name="location" />
+          </div>
+          <div class="form-group">
+            <label for="time">Waktu (ex: 7.30-10.10 AM)</label>
+            <input type="text" id="time" name="time" required />
+          </div>
+
+          <div class="form-buttons">
+            <button type="submit" id="form-submit-btn">Tambah Jadwal</button>
+            <button type="button" id="cancel-edit-btn" class="hidden">
+              Batal Edit
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="board-container">
+        <div class="day-column" id="column-senin">
+          <div class="column-header" style="background-color: #fde9e9">
+            <h2>Senin</h2>
+          </div>
+          <div class="cards-container" id="senin"></div>
+        </div>
+
+        <div class="day-column" id="column-selasa">
+          <div class="column-header" style="background-color: #e6f7f2">
+            <h2>Selasa</h2>
+          </div>
+          <div class="cards-container" id="selasa"></div>
+        </div>
+
+        <div class="day-column" id="column-rabu">
+          <div class="column-header" style="background-color: #fef7e0">
+            <h2>Rabu</h2>
+          </div>
+          <div class="cards-container" id="rabu"></div>
+        </div>
+
+        <div class="day-column" id="column-kamis">
+          <div class="column-header" style="background-color: #fde9f3">
+            <h2>Kamis</h2>
+          </div>
+          <div class="cards-container" id="kamis"></div>
+        </div>
+
+        <div class="day-column" id="column-jumat">
+          <div class="column-header" style="background-color: #e0f2fe">
+            <h2>Jumat</h2>
+          </div>
+          <div class="cards-container" id="jumat"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
