@@ -19,6 +19,6 @@ cd refi_123140126_pertemuan5
 Lihat instruksi spesifik di setiap section pertemuan di atas.
 
 ## Author
-**Refi Ikhsanti**
-NIM: 123140126
+**Refi Ikhsanti**  
+NIM: 123140126  
 Program Studi: Teknik Informatika
