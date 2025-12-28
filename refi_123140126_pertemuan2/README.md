@@ -1,10 +1,15 @@
-Deskripsi singkat
-- Fungsi aplikasi: Eksperimen JavaScript sederhana yang menunjukkan interaksi DOM, event handling, dan manipulasi data di halaman web.
-- Fitur utama: interaksi tombol, manipulasi elemen DOM, dan penggunaan fitur modern ES6+.
+## Deskripsi Singkat
 
-- ![alt text](image.png) — tampilan halaman utama
+- **Fungsi aplikasi**: Eksperimen JavaScript sederhana yang menunjukkan interaksi DOM, event handling, dan manipulasi data di halaman web.
+- **Fitur utama**: Interaksi tombol, manipulasi elemen DOM, dan penggunaan fitur modern ES6+.
 
-Daftar fitur ES6+ yang diimplementasikan
+## Screenshot
+
+<img width="1920" height="1080" alt="Screenshot 2025-12-28 105057" src="https://github.com/user-attachments/assets/6beadaca-9ef1-4978-bf01-7cb1628b76d5" />
+
+— Tampilan halaman utama
+
+## Daftar Fitur ES6+ yang Diimplementasikan
 
 - `let` / `const` untuk deklarasi variabel.
 - Arrow functions (fungsi panah) untuk callback singkat.
@@ -13,7 +18,7 @@ Daftar fitur ES6+ yang diimplementasikan
 - Default parameters pada fungsi bila diperlukan.
 - Array methods modern: `map`, `filter`, `forEach`.
 
-Cara menjalankan
+## Cara Menjalankan
 
 1. Buka folder `refi_123140126_pertemuan2`.
 2. Buka `index.html` di browser atau jalankan server statis sederhana:
