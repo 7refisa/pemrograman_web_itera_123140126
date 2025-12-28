@@ -1,0 +1,44 @@
+Deskripsi singkat
+
+- Fungsi aplikasi: Aplikasi web sederhana yang menampilkan halaman statis dan form input untuk demo penggunaan localStorage dan validasi form di sisi klien.
+- Fitur utama: menampilkan daftar data sederhana, menyimpan data ke `localStorage`, form input dengan validasi, dan navigasi halaman dasar.
+
+Screenshot (tambahkan gambar di folder ini dan ganti nama file sesuai):
+
+- ![screenshot_1_home](image.png) — tampilan halaman utama (daftar data)
+- ![screenshot_2_form](image-1.png) — tampilan form input dengan pesan validasi
+- ![screenshot_3_after_save](image-2.png) — tampilan setelah menyimpan data ke localStorage
+
+Cara menjalankan aplikasi (lokal)
+
+1. Buka folder `refi_123140126_pertemuan1` di terminal.
+2. Buka file `index.html` di browser (klik file atau gunakan server statis):
+
+```powershell
+# (opsional) Jalankan server cepat bila ingin: dari folder yang berisi index.html
+python -m http.server 8000
+# lalu buka http://localhost:8000/index.html
+```
+
+Daftar fitur yang diimplementasikan
+
+- Menampilkan daftar item sederhana (HTML + CSS).
+- Form input untuk menambah item baru.
+- Validasi input: cek input kosong, cek panjang minimal, dan tangani pesan kesalahan ke pengguna.
+- Menyimpan dan mengambil data dari `localStorage` sehingga data bertahan setelah reload.
+
+Penjelasan teknis: penggunaan `localStorage` dan validasi form
+
+- localStorage:
+
+  - `localStorage` adalah penyimpanan di browser yang menyimpan data sebagai pasangan kunci-nilai string.
+  - Contoh penggunaan:
+    - Menyimpan: `localStorage.setItem('books', JSON.stringify(booksArray));`
+    - Mengambil: `const books = JSON.parse(localStorage.getItem('books') || '[]');`
+  - Dalam aplikasi ini, data yang dimasukkan lewat form diubah jadi objek, kemudian kita ambil seluruh array dari `localStorage`, push item baru, lalu simpan kembali dengan `setItem`.
+
+- Validasi form (sisi klien):
+  - Sebelum menyimpan, kita cek kondisi input seperti `if (!title) { showError('Judul kosong'); return; }`.
+  - Validasi dilakukan di event listener form `submit`.
+  - Bila validasi gagal, tampilkan pesan di elemen DOM (mis. `<div class="error">`), dan jangan panggil fungsi penyimpanan.
+  - Setelah validasi sukses, bersihkan pesan error dan lakukan proses penyimpanan.
